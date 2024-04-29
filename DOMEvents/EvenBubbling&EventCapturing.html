@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 100px;
+            background-color: gray
+        }
+        #myDiv{
+            padding: 50px;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <!--Event Bubbling (false) activated from child (button,div,body)
+        Event Capturing (true) activated from parent (body,div,button)-->
+    <div id="myDiv">
+        <button id="btn">Click me</button>
+    </div>
+    <script>
+        let d=document.getElementById("myDiv");
+        let b=document.getElementById("btn");
+
+         /*
+        b.addEventListener('click',btnClicked,true);
+        d.addEventListener('click',divClicked,true);
+        document.body.addEventListener('click',bodyClicked,true);
+        */
+
+        b.addEventListener('click',btnClicked);
+        d.addEventListener('click',divClicked);
+        document.body.addEventListener('click',bodyClicked);
+       
+
+        /*function btnClicked(event)//only select button clicked
+        {
+            console.log("button clicked");
+            event.stopPropagation();
+        }*/
+
+        function btnClicked()
+        {
+            console.log("button clicked");
+        }
+
+
+
+        function divClicked()
+        {
+            console.log("div clicked");
+        }
+        
+        function bodyClicked()
+        {
+            console.log("body clicked");
+        }
+    </script>
+</body>
+</html>

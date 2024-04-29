@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //any function join with object it called method
+        let person={
+            firstName:'Shivani',
+            lastName:'Nagapure',
+            age:26
+        }
+
+        //1st way using anonymus Function
+        person.sayHello=function(){
+            console.log("Hello!");
+        }
+        person.sayHello();
+
+        //2nd way using separate function name
+        function greet(){
+            console.log("Hello!");
+        }
+        person.sayHello=greet;
+        person.sayHello();
+
+        //3rd Way using anonymus Function under the object
+        let person2={
+            firstName:'Shivani',
+            lastName:'Nagapure',
+            age:26,
+           sayHello1:function(){
+            console.log("Hello!");   
+            }
+        };
+        person2.sayHello1();
+
+        //4rd way using only function name under the object
+        let person1={
+            firstName:'Shivani',
+            lastName:'Nagapure',
+            age:26,
+            sayHello1(){
+            console.log("Hello!");
+            }
+        };
+        person1.sayHello1();
+        
+    </script>
+</body>
+</html>

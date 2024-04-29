@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Nested For Loop
+          for(let Counter=1;Counter<=10;Counter++)
+        {
+            document.write(Counter);
+            document.write("<br>");
+            for(let Counter=1;Counter<3;Counter++)
+            {
+                document.write("JavaSCript");
+                document.write("<br>");
+            }
+        }
+        document.write("<br><br>");
+
+        document.write("<h4>Break Loop</h4>");
+
+        for(let Counter=1;Counter<=5;Counter++)
+        {
+            document.write(Counter);
+            document.write("<br>");
+            for(let Counter1=1;Counter1<3;Counter1++)
+            {
+                if(Counter==3)
+                {
+                    break;
+                }
+                document.write("JavaSCript");
+                document.write("<br>");
+            }
+        }
+        document.write("<br><br>");
+
+         document.write("<h4>Continue Loop</h4>");
+        for(let Counter=1;Counter<=5;Counter++)
+        {
+            document.write(Counter);
+            document.write("<br>");
+            for(let Counter2=1;Counter2<3;Counter2++)
+            {
+                if(Counter==3)
+                {
+                    continue;
+                }
+                document.write("JavaSCript");
+                document.write("<br>");
+            }
+        }
+
+        document.write("<h4>Outer Loop</h4>");
+        //if you want stop outer if we have to use label
+        
+        outer: for(let Counter=1;Counter<=5;Counter++)
+        {
+            document.write(Counter);
+            document.write("<br>");
+            for(let Counter2=1;Counter2<3;Counter2++)
+            {
+                if(Counter==3)
+                {
+                    break outer;
+                }
+                document.write("JavaSCript");
+                document.write("<br>");
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

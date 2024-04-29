@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Prevent default it used when we want remove default property
+    ex, default property is when we click on https://google directly jump to google page 
+        but by using PreventDefault when we click it display link clicked statement in console-->
+    <a href="https://www.google.com" id="anchor">Click me</a>
+
+    <script>
+        let link=document.getElementById("anchor");
+        link.addEventListener('click',function(event){
+            console.log("Link Clicked");
+            event.preventDefault();
+        })
+    </script>
+</body>
+</html>

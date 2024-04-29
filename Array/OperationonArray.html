@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let book=["math","science","english","hindi","marathi"];//1st way
+         console.log(book.length);//length is 5
+
+         book.push("History");
+         //book.unshift("History");//histroy add at strting position ex 0
+        console.log(book);
+
+        book.pop("marathi");
+        book.pop();//remove history
+        console.log(book);
+
+        book.shift();
+        console.log(book);//remove math
+        
+        let book1=["math","science","english","hindi","marathi"];//1st way
+
+        book1.splice(2,1);//remove english 1 element
+        //book1.splice(2,2);//remove english and hindi 2 element
+        console.log(book1);
+
+       /* /book1=[];//blank array
+        console.log(book1);*/
+
+        let position=book1.indexOf("marathi");
+        console.log(position);
+
+        let book2="english";
+        console.log(Array.isArray(book2));//display false because book2 is not a array
+        console.log(Array.isArray(book));//display true because book is  a array
+
+        let text="This is a random text";//statement converted into array
+        let wordarray=text.split(' ');
+       // let wordarray=text.split('s');//remove s from array
+        console.log(wordarray);
+
+        console.log(book);
+        let arr=book.join(' ');
+        // let arr=book.join('-');
+        console.log(arr);
+
+        let newbook=book.concat(book1);//combine 2 books
+        //let newbook=book.concat(book1,book2);combine 3 books
+        console.log(newbook);
+    </script>
+</body>
+</html>

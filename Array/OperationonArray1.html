@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let book=["math","science","english","hindi","marathi"];//1st way
+
+        let bookwithpages=[
+            ["math","300"],
+            ["science","400"],
+            ["english","500"]
+    ];
+
+    //let fetch=bookwithpages[1];//display all science and 400
+    let fetch=bookwithpages[1][0];
+
+     console.log(fetch);
+
+    let bookwithpages1=[
+            ["math",["300","500"]],
+            ["science","400"],
+            ["english","500"]
+    ];
+        //let fetch1=bookwithpages1[0][1][0];
+        let fetch1=bookwithpages1[0][1][1];
+        console.log(fetch1);
+   
+    </script>
+
+    <script>
+        //using for loop
+          let book1=["math","science","english","hindi","marathi"];//1st way
+
+          let booklength=book1.length;
+          for(i=0;i<booklength;i++)
+          {
+            console.log(`Element ${i} is ${book1[i]} \n`);
+          }
+    </script>
+
+    <script>
+        //using function
+        let book2=["math","science","english","hindi","marathi"];//1st way
+
+        book2.forEach(myfun);
+
+        function myfun(value){
+            console.log(value);
+        }
+    </script>
+</body>
+</html>

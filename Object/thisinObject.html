@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //this keyword used agar koi property usi object main ho to humko us object ka naam nahi deke
+        // this keyword used karna chahiyeh
+        //ex person.firstname or this.firstname 
+        let person1={
+            firstName:'Shivani',
+            lastName:'Nagapure',
+            age:26,
+            sayHello1(){
+           // console.log("Hello! i am " +person1.firstName +" and i have a "+car.brand +"car");
+           console.log("Hello! i am " +this.firstName +" and i have a "+car.brand +"car");
+            }
+        };
+
+        let car={
+            brand:'Tata',
+            model:'Safari'
+        }
+        person1.sayHello1();
+    </script>
+</body>
+</html>

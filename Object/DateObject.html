@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=new Date();
+        console.log(x);
+        
+        let x1=new Date(2021,5,4,12,30,58,7);//year,month,date,hour,min,sec,milis
+        //let x1=new Date("June 04,2021 12:30:56");
+        console.log(x1);
+        
+        //get
+        let x2=new Date("june 4, 2021 12:39:56");
+        console.log(x2.getMonth());
+        console.log(x2.getDate());
+        console.log(x2.getFullYear());
+        console.log(x2.getHours());
+        console.log(x2.getSeconds());
+        console.log(x2.getMinutes());
+        console.log(x2.getDay());
+        
+        //set
+        let x3=new Date("june 4, 2021 12:39:56");
+        x3.setFullYear(2022);
+        x3.setHours(13);
+        x3.setMonth(5);
+        console.log(x3);
+
+        //display date after 50 
+        let d1=new Date("june 4, 2021 12:39:56");
+        let d2=new Date("june 4, 2021 12:39:56");
+        d2.setDate(d1.getDate()+50);
+        console.log(d1);
+        console.log(d2);
+
+        //
+        let d3=new Date("june 4, 2021 12:39:56");
+        let d4=new Date();
+
+        if(d4>d3)
+        {
+            console.log("d3 is past date");
+        }
+        else if(d3>d4)
+        {
+            console.log("d3 is future date");
+        }
+        else
+        {
+            console.log("d3 is same date");
+        }
+</script>
+</body>
+</html>

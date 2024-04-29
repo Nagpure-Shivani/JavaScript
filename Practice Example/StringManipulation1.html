@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str="This is a Javascript Tutorial. It is a Good Tutorial";
+
+        let substring=str.substring(8,18);//print from 8 to 18 but consider as 17
+        console.log(substring);
+
+        let position=str.indexOf("good");//print position of good 39
+        console.log(position);
+
+        let position1=str.indexOf('is', 6);//print is after 6 position 34
+        console.log(position1);
+
+        let position2=str.lastIndexOf('is');//print last index of (is) is 34 
+        console.log(position2);
+
+        let position3=str.lastIndexOf('iss');//print -1 because iss not in statement
+        console.log(position3);
+
+        let trimstr=str.trim();
+        console.log(str);
+        console.log(trimstr);
+
+        let str1=str.toUpperCase();//display in uppercase
+        console.log(str);
+        console.log(str1);
+
+        let str2=str.toLowerCase();//display in Lowercase
+        console.log(str);
+        console.log(str2);
+
+        let rep=str.replace('Good','Best');//replace from good to best
+        console.log(str);
+        console.log(rep);
+
+        let inclu=str.includes('Javascript');//display true beacuse javascript present in statement
+        console.log(str);
+        console.log(inclu);
+
+        let inclu1=str.includes('Html');//display false beacuse html not present in statement
+        console.log(str);
+        console.log(inclu1);
+
+
+
+
+
+    </script>
+</body>
+</html>

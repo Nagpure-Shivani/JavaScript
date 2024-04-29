@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //alert()
+        alert("Welcome to JavaScript!");
+
+        //prompt()
+        let age=prompt("Enter Your Age");
+    if(age!=null)
+    {
+        document.write(`Your age is ${age}`);
+    }
+    else
+    {
+        document.write("Age Field was Blank");
+    }
+    document.write("<br><br>");
+    //default value display
+    let age1=prompt("Enter Your Age",20);
+    if(age1!=null)
+    {
+        document.write(`Your age is ${age1}`);
+    }
+    else
+    {
+        document.write("Age Field was Blank");
+    }
+    document.write("<br><br>");
+    //confirm()
+    let response=confirm("Are you sure!you want to delete");
+    if(response)
+    {
+        document.write("Deleted");
+    }
+    else
+    {
+        document.write("Not Deleted");
+    }
+    </script>
+</body>
+</html>

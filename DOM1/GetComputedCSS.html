@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #btn1{
+        background-color: red;
+        color: white;
+    }    
+    </style>
+</head>
+<body>
+    <!--getcomputedstyle() it is used to check the property we apply ex which color apply -->
+    <button id="btn1" name="form2">Send</button>
+    <script>
+        let btn1=document.getElementById("btn1");
+
+        let css=getComputedStyle(btn1);
+        console.log(css.color);
+    </script>
+</body>
+</html>

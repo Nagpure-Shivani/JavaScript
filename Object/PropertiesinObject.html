@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //object
+         let person={};
+       // document.write(person);
+       console.log(person);
+
+       //1st Program
+       let person1={
+        firstName:'Shivani',
+        lastName:'Nagapure'
+       };
+       //console.log(person1.firstName);
+       //console.log(person1.lastName);
+
+       console.log(person1['lastName']);//using array[]
+
+       //2nd Program
+       let person2={
+        'first Name':'shivani',
+        lastName:'Nagapure' 
+       };
+       console.log(person2['first Name']);//using Space
+       
+       //3rd Program
+       let person3={
+        firstName:'Shivani',
+        lastName:'Nagapure'
+       };
+       console.log(person.age);//undefined
+       console.log(person3);//display all data
+
+       //4th Program
+       let person4={
+        firstName:'Shivani',
+        lastName:'Nagapure'
+       };
+
+       person4.age=26;//add column
+       person4.firstName="Gaytri";//edit firstname
+       delete person4.lastName;
+      // console.log(person4.firstName);
+
+      console.log(person4);
+      console.log('height' in person4);//field not aviable display false
+      console.log('age' in person4);//field is aviable display True
+
+      //5th Program(for in loop)
+      let person5={
+        firstName:'Shivani',
+        lastName:'Nagapure',
+        age:26
+       };
+       for (let key in person5)
+       {
+        console.log(key +": " +person5[key]);
+       }
+    </script>
+</body>
+</html>

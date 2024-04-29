@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="cl pi">list1</li>
+        <li id="first">list2</li>
+        <li class="cl">list3</li>
+    </ul>
+    <script>
+        let clas=document.getElementsByClassName("cl pi");
+        //let clas=document.getElementsByClassName("cl");
+        //console.log(clas);
+
+        for(i=0;i<clas.length;i++)
+        {
+           clas[i].innerHTML="<p>hello</p>";
+        }
+
+    </script>
+</body>
+</html>

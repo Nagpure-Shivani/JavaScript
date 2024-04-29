@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function add(num1,num2){
+            document.write(num1+num2 );
+         
+            
+        }
+        add(5,7);
+            
+
+        function add1(){
+           
+           console.log(arguments.length);//length 3
+           console.log(arguments[1]);//7
+
+       }
+       add1(5,7,6);
+
+        
+    </script>
+    <script>
+        function add4(){
+            if(arguments.length == 0)
+            {
+                console.log("No Parameter Passesd...");
+            }
+            else{
+                let sum=0;
+                for(let i=0;i<arguments.length;i++)
+                {
+                    sum=sum+arguments[i];
+                }
+                console.log(sum);
+            }
+            
+        }
+        add4(6,8);
+        add4(6,8,8);
+
+    </script>
+</body>
+</html>

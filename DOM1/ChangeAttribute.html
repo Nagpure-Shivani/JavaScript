@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" name="form1" >Send</button>
+    <script>
+        let btn=document.getElementById("btn");
+       // btn.setAttribute("name","form1");
+       btn.setAttribute("class","demo1");//set attribute class
+
+       let val=btn.getAttribute("name");//get the attribute of name
+       console.log(val);
+       
+       let remove=btn.removeAttribute("name");//remove attribute
+       console.log(remove);
+
+       let hasattri=btn.hasAttribute("name");//check name attribute 
+       console.log(hasattri);//false
+
+       let hasattri1=btn.hasAttribute("class");//check class attribute
+       console.log(hasattri1);//true
+
+
+       
+    </script>
+</body>
+</html>

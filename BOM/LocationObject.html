@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="fun()">REdirect to Google</button>
+    <button id="btn1" onclick="fun1()">Reload</button>
+
+    <script>
+        //window.location object can be used to get the current page address(url).
+        //redirect the browser to a new page.
+        
+        //console.log(window.location.href);
+        console.log(location.href);
+        console.log(location.pathname);
+        console.log(location.protocol);
+        
+    </script>
+
+    <script>
+        function fun()
+        {
+           window.location="https://www.google.com";//1st way
+           // location.href="https://www.google.com";//2nd way
+
+           //assign stored in history back arrow of webpage is work
+            //location.assign("https://www.google.com");//3rd way
+            
+            //does not stored in history so back of webpage arrow not work 
+           // location.replace("https://www.google.com");//4th way
+        }
+        function fun1(){
+            location.reload();//refresh
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //The Window secreen object contains the information about the user screen
+
+        //console.log(window.screen.width);
+        console.log(screen.width);//return the width of the visitor screen in pixels
+        console.log(screen.height);//return the height of the visitor screen in pixels
+    
+        //return the height of the visitor screen in pixels minus interface features like the windows taskbar
+        console.log(screen.availHeight);
+         //return the width of the visitor screen in pixels minus interface features like the windows taskbar
+        console.log(screen.availWidth);
+
+        //returns the number of bits used to display one color.
+        //24bits=16,777,216 different "True Colors"
+        //32bits=4,294,967,296 different "Deep Colors"
+        console.log(screen.colorDepth);
+
+        //returns pixel depth of the screen.
+        console.log(screen.pixelDepth);
+        console.log(screen.orientation);
+    </script>
+</body>
+</html>

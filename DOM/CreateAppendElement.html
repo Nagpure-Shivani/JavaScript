@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Append mens add 
+    add after statement-->
+
+    <div id="intro">
+        <p id="p1">Hello this is a p tag</p>
+    </div>
+
+    <script>
+        let elem=document.getElementById("intro");
+
+        let h1=document.createElement('h1');
+
+        h1.className="try pi";
+        h1.id="intro";
+
+        h1.textContent="content added";//1st way add content
+
+        /*let text=document.createTextNode("this is h1 tag");//2nd way to add content
+        h1.appendChild(text);*/
+
+       elem.appendChild(h1);
+
+        //document.body.appendChild(h1);//h1 tag added after div or script tag
+
+        let pra=document.getElementById("p1");//read the content from p tag 
+        console.log(pra.textContent);
+
+    </script>
+    
+</body>
+</html>

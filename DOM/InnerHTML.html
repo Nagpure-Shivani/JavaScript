@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--change html element in js-->
+    <div id="intro">
+        <p>This is a P tag</p>
+    </div>
+
+    <script>
+        let ele=document.getElementById("intro");
+        
+        let content=ele.innerHTML;//get the element
+        console.log(content);
+    </script>
+
+    <script>
+        let ele1=document.getElementById("intro");
+        
+       ele.innerHTML="<h1>this is a heading tag </h1>"//set the element
+        
+    </script>
+   
+</body>
+</html>
